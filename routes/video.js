@@ -8,7 +8,7 @@ const requireAuth = passport.authenticate("jwt", {session: false});
 
 const Uploader = require('../controllers/Uploader');
 
-const videoController = require('../controllers/videoController')
+const videoController = require('../controllers/VideoController.js')
 
 router.get('/', (req, res, next) => videoController.getAll(req, res, next));
 // router.post('/create', requireAuth, Uploader.uploadImage, Uploader.uploadVideo, (req, res, next) => videoController.create(req, res, next));
